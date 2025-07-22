@@ -6,6 +6,7 @@ from gigachat import GigaChat
 from parse_itmo import download_with_selenium
 import time
 import shutil
+from secrets import GIGACHAT_API_KEY, TELEGRAM_TOKEN
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -15,8 +16,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 GIGACHAT_FILE_IDS = []
-TELEGRAM_TOKEN = "7814655537:AAGeaKSkcSF5weQvqXZwVrKMVw1erq1Oe1o"
-GIGACHAT_API_KEY = "NzU1YTYyNjYtZjU0Ny00ZDE4LWFhMjYtZWI1YjJlYmU5MDJkOmY3MTRmNWJhLWEyNjMtNGE3OC1hM2MxLTNhNjE3ZGI5N2M0NQ=="  # Замените на свой API ключ GigaChat
 GIGACHAT_API_URL = "https://gigachat.api.sbercloud.ru/api/v1/chat/completions"
 
 # Состояния для диалога с пользователем
